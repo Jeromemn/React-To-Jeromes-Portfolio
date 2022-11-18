@@ -26,6 +26,8 @@ import PageContainer from './components/PagesContainer';
 // import Header from './components/Header';
 // import NavTabs from './components/Navigation';
 // import Form from './pages/Contact';
+// import Projects from './components/Projects';
+// import PortfolioItems from './pages/Portfolio';
 
 function App() { 
 return (
@@ -33,6 +35,8 @@ return (
     {/* <NavTabs /> */}
     {/* <Header /> */}
    <PageContainer />;
+   {/* <PortfolioItems projects={Projects} />;  */}
+    {/* <Projects />; */}
     {/* <Section /> */}
   </div>
 );

@@ -5,6 +5,7 @@ import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
 import '../styles/Header.css';
+// import projects from "./Projects";
 
 
 export default function PageContainer() {

@@ -1,0 +1,18 @@
+.form {
+    margin: 20px;
+  }
+  
+  .form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20%;
+  }
+
+  .message-me input{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 20%;
+    height: 200px,
+  }

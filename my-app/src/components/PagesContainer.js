@@ -4,8 +4,8 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
-import '../styles/Header.css';
 // import projects from "./Projects";
+import Header from "./Header";
 
 
 export default function PageContainer() {
@@ -26,26 +26,18 @@ export default function PageContainer() {
     }
   };
 
-  const styles = {
-    headerStyle: {
-        background: '#1F271B',
-    },
-    headingStyle: {
-        fontSize: '80px',
-        fontColor: '#FBFBF2',
-    },
-};
-
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <header style={styles.headerStyle} className='header'>
-    <h1 style={styles.headingStyle}> Jerome </h1>
-    
-    
+    <>
+      <Header> 
+
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
     
-    </header>
+      </Header>
+      
+      {renderPage()}
+    </>
+    
   );
 }

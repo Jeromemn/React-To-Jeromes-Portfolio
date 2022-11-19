@@ -1,43 +1,67 @@
+import styled from 'styled-components';
+
+const NavItem = styled.a`
+   color: white;
+   text-decoration: none;
+
+   ${(props) => props.isActive && `
+      color: black;
+      
+   `}
+`;
+const ListItem = styled.li`
+   list-style-type: none;
+   display: inline;
+   padding: 1.5em 1.5em 0 1.5em;
+   margin-bottom: 0;
+   font-size: 2em;
+   `;
+
+   const UnorderedList = styled.ul`
+   padding-bottom: .8em;
+   margin-bottom: 0;
+   `;
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className=" nav nav tabs">
-      <li className="nav-item">
-        <a
+    <UnorderedList>
+      <ListItem >
+        <NavItem isActive={currentPage === 'Home'}
           href="#home"
           onClick={() => handlePageChange("Home")}
-          className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+          // className={currentPage === "Home" ? "nav-link active" : "nav-link"}
         >
           About Me
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
+        </NavItem>
+      </ListItem>
+      <ListItem >
+        <NavItem isActive={currentPage === 'Portfolio'}
           href="#portfolio"
           onClick={() => handlePageChange("Portfolio")}
-          className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
+          // className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
         >
           Portfolio
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
+        </NavItem>
+      </ListItem>
+      <ListItem>
+        <NavItem isActive={currentPage === 'Contact'}
           href="#contact"
           onClick={() => handlePageChange("Contact")}
-          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+          // className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
         >
           Contact Me
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
+        </NavItem>
+      </ListItem>
+      <ListItem>
+        <NavItem isActive={currentPage === 'Resume'}
           href="#resume"
           onClick={() => handlePageChange("Resume")}
-          className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+          // className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
         >
           Resume
-        </a>
-      </li>
-    </ul>
+        </NavItem>
+      </ListItem>
+    </UnorderedList>
   );
 }
 

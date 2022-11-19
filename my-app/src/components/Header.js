@@ -1,22 +1,25 @@
-import '../styles/Header.css';
+import styled from 'styled-components';
 
-const styles = {
-    headerStyle: {
-        background: '#1F271B',
-    },
-    headingStyle: {
-        fontSize: '80px',
-        fontColor: '#FBFBF2',
-    },
-};
+const Header = styled.header`
+ background: #1F271B;
+ 
+ `;
 
-function Header() {
+ const HeaderText = styled.h2`
+    font-size:60px;
+    color: #FBFBF2;
+    margin-top: 0;
+    margin-left: 1.1em;
+    margin-bottom: 0;
+ `;
+
+function HeaderComp(props) {
     return (
-        <header style={styles.headerStyle} className='header'>
-            <h1 style={styles.headingStyle}> Jerome </h1>
-            
-        </header>
+        <Header>
+            <HeaderText> Jerome </HeaderText>
+             {props.children}
+        </Header>
     );
 }
 
-export default Header;
+export default HeaderComp;

@@ -32,12 +32,9 @@ import PageContainer from './components/PagesContainer';
 function App() { 
 return (
   <div>
-    {/* <NavTabs /> */}
-    {/* <Header /> */}
+    
    <PageContainer />;
-   {/* <PortfolioItems projects={Projects} />;  */}
-    {/* <Projects />; */}
-    {/* <Section /> */}
+
   </div>
 );
 }

@@ -6,6 +6,7 @@ import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
 // import projects from "./Projects";
 import Header from "./Header";
+import FooterContainer from "./Footer";  // import footer container and change footer to footercontainer
 
 
 export default function PageContainer() {
@@ -30,13 +31,20 @@ export default function PageContainer() {
 
   return (
     <>
+    
       <Header> 
 
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
     
       </Header>
-      
+      <body>
       {renderPage()}
+
+      </body>
+    
+      <FooterContainer>
+
+      </FooterContainer>
     </>
     
   );

@@ -97,11 +97,11 @@ function Card() {
               </CardTextWrapper>
               <CardStatWrapper>
                 <CardStats>
-                  <LinkText href={project.deployed} target="_blank">Deployed Site</LinkText>
+                  <LinkText href={project.deployed} target="_blank" rel="noreferrer">Deployed Site</LinkText>
                   </CardStats>
                     
                   <CardStats>
-                  <LinkText href={project.github} target="_blank">Github</LinkText>
+                  <LinkText href={project.github} target="_blank" rel="noreferrer">Github</LinkText>
                 </CardStats>
               </CardStatWrapper>
             </CardWrapper>

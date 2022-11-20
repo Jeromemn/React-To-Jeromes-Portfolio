@@ -2,50 +2,48 @@ import styled from "styled-components";
 // import cardbattle from "../../assets/Card-Battle-gif.gif";
 // import nonSocial from "../../assets/NonSocial-screenshot.jpg";
 
-
 export const CardWrapper = styled.div`
-display: grid;
-grid-template-columns: 450px;
-grid-template-rows: 350px 100px 80px;
-grid-template-areas: "image" "text" "stats";
-border-radius: 18px;
-background: #000;
-box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-text-align: center;
-margin: 20px;
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: 350px 100px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin: 20px;
 `;
 
 export const CardImage = styled.div`
-grid-area:image;
-background: url(${({ background }) => background});
-border-top-left-radius: 15px;
-border-top-right-radius: 15px;
-background-size: cover;
-/* background-position: center;
+  grid-area: image;
+  background: url(${({ background }) => background});
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  /* background-position: center;
 background-repeat: no-repeat;
 height: 100%; */
-
 `;
 
 export const CardTextWrapper = styled.div`
-grid-area: text;
-margin: 5px;
+  grid-area: text;
+  margin: 5px;
 `;
 
 export const CardTextDate = styled.span`
-color: rgb(255, 7, 110);
-font-size: 13px;
+  color: rgb(255, 7, 110);
+  font-size: 13px;
 `;
 
 export const CardTextTitle = styled.h2`
-margin-top: 0px;
-font-size:2rem;
-box-sizing: border-box;
-min-width: 0px;
-line-height: 1.2;
-margin: 0px;
-text-align: center;
-background: linear-gradient(
+  margin-top: 0px;
+  font-size: 2rem;
+  box-sizing: border-box;
+  min-width: 0px;
+  line-height: 1.2;
+  margin: 0px;
+  text-align: center;
+  background: linear-gradient(
     110.78deg,
     rgb(118, 230, 80) -1.13%,
     rgb(249, 214, 73) 15.22%,
@@ -54,41 +52,41 @@ background: linear-gradient(
     rgb(255, 24, 189) 67.94%,
     rgb(26, 75, 255) 85.34%,
     rgb(98, 216, 249) 99.57%
-);
-background-clip: text;
--webkit-background-clip: text;
-color: transparent;
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 `;
 
 export const CardBodyText = styled.p`
-color: grey;
-font-size: 15px;
-font-weight: 300;
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
 `;
 
 export const CardStatWrapper = styled.div`
-grid-area: stats;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr;
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 
-border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px;
-background: #5930e5;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #5930e5;
 `;
 
 export const CardStats = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-color: white;
-padding: 10px;
-font-size: 1.4em;
-text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  font-size: 1.4em;
+  text-align: center;
 `;
 
 export const LinkText = styled.a`
-color: #fff;
-text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 `;

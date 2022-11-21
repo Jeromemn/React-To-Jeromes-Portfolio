@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+    header
+
     body {
         /* height: 100%; */
         /* width: 100%; */

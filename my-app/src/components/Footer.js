@@ -1,7 +1,7 @@
 import gitHub from "../assets/GitHub-logo.png"
 import linkedin from "../assets/LinkedIn_Logo.svg.png"
 import styled from "styled-components"
-import { GlobalStyles} from '../styles/globalStyles.js'
+// import { GlobalStyles} from '../styles/globalStyles.js'
 
 // import { Icon } from "./footerParts/Icons"
 
@@ -134,6 +134,8 @@ background: #1F271B ;
 bottom: 0;
 width: 100%;
 position: fixed;
+left: 0;
+height: 2%;
 `;
 
 const Wrapper = styled.div`
@@ -155,7 +157,7 @@ const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(2, minmax(230px, 1fr));
     grid-gap: 20px;
-    height: 50px;
+    height: 30px;
     /* align-content: center; */
 
     @media (max-width: 1000px) {
@@ -182,7 +184,7 @@ const Link = styled.a`
 export default function FooterContainer() {
     return (
         <>
-        <GlobalStyles/>
+        {/* <GlobalStyles/> */}
         <Footer>
             <FootWrapper>
                 <FootRow>

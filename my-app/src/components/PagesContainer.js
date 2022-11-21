@@ -37,10 +37,10 @@ export default function PageContainer() {
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
     
       </Header>
-      <body>
+      {/* <body> */}
       {renderPage()}
 
-      </body>
+      {/* </body> */}
     
       <FooterContainer>
 

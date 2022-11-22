@@ -23,6 +23,7 @@
 // }
 
 import PageContainer from './components/PagesContainer';
+import { GlobalStyles } from './styles/globalStyles';
 // import Header from './components/Header';
 // import NavTabs from './components/Navigation';
 // import Form from './pages/Contact';
@@ -32,8 +33,8 @@ import PageContainer from './components/PagesContainer';
 function App() { 
 return (
   <div>
-    
-   <PageContainer />;
+    <GlobalStyles/>
+   <PageContainer />
 
   </div>
 );

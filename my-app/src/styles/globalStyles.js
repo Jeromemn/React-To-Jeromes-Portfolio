@@ -1,13 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    header
 
     body {
         /* height: 100%; */
         /* width: 100%; */
         bottom: 0;
         padding: 0;
+        margin: 0;
 
     }
     
@@ -22,5 +22,9 @@ export const GlobalStyles = createGlobalStyle`
         /* top: 100em; */
         bottom: 0;
         
+    }
+
+    h1, p {
+        margin: 0;
     }
 `;

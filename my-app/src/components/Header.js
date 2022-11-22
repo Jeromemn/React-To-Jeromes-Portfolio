@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Header = styled.header`
  background: #1F271B;
- position: fixed;
+ position: sticky;
  width: 100%;
  /* padding: 80px, 60px; */
  top: 0;
@@ -10,7 +10,7 @@ const Header = styled.header`
  display: flex;
  flex-direction: column;
  margin: 0 auto;
- /* z-index: ; */
+ z-index: 99;
  /* bottom: 0; */
  
  `;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import cardbattle from "../../assets/Card-Battle-gif.gif";
 // import nonSocial from "../../assets/NonSocial-screenshot.jpg";
+// import github from "../../assets/GitHub-logo.png"
 
 export const CardWrapper = styled.div`
   display: grid;
@@ -20,9 +21,12 @@ export const CardImage = styled.div`
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
-  /* background-position: center;
-background-repeat: no-repeat;
-height: 100%; */
+  /* background-position: center; */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 350px;
+  width: 450px;
 `;
 
 export const CardTextWrapper = styled.div`
@@ -43,7 +47,8 @@ export const CardTextTitle = styled.h2`
   line-height: 1.2;
   margin: 0px;
   text-align: center;
-  background: linear-gradient(
+  color: white;
+  /* background: linear-gradient(
     110.78deg,
     rgb(118, 230, 80) -1.13%,
     rgb(249, 214, 73) 15.22%,
@@ -52,10 +57,10 @@ export const CardTextTitle = styled.h2`
     rgb(255, 24, 189) 67.94%,
     rgb(26, 75, 255) 85.34%,
     rgb(98, 216, 249) 99.57%
-  );
+  ); */
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  /* color: transparent; */
 `;
 
 export const CardBodyText = styled.p`
@@ -89,4 +94,25 @@ export const CardStats = styled.div`
 export const LinkText = styled.a`
   color: #fff;
   text-decoration: none;
+  position: relative;
+  display: block;
+
+  &:hover {
+    transition-timing-function: ease-in-out;
+    transition: .6s, .6s;
+    transform: scale(1.8);
+    
+
+    /* font-weight: 300; */
+  }
 `;
+
+// export const LinkImage = styled.img`
+// display: none;
+// width: 40px;
+// position: absolute;
+
+// &:hover  {
+//   display: block;
+// }
+// `;

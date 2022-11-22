@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styled from "styled-components";
 import NavTabs from "./Navigation";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
@@ -6,8 +7,27 @@ import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
 // import projects from "./Projects";
 import Header from "./Header";
-import FooterContainer from "./Footer";  // import footer container and change footer to footercontainer
+import FooterContainer from "./Footer"; // import footer container and change footer to footercontainer
+import newBackground from "../assets/homeBackground.jpg";
 
+const PageWrapper = styled.div`
+  padding: 1rem;
+  min-height: calc(100vh - 135px - 118px - 2rem);
+  background: #878E88;
+  /* z-index: -2; */
+
+  ${({ $isHomePage }) =>
+    $isHomePage &&
+    `
+     background-image: url(${newBackground});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+  `}
+`;
 
 export default function PageContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -31,21 +51,17 @@ export default function PageContainer() {
 
   return (
     <>
-    
-      <Header> 
-
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-    
+      <Header>
+        <NavTabs
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
       </Header>
-      {/* <body> */}
-      {renderPage()}
+      <PageWrapper $isHomePage={currentPage === "Home"}>
+        {renderPage()}
+      </PageWrapper>
 
-      {/* </body> */}
-    
-      <FooterContainer>
-
-      </FooterContainer>
+      <FooterContainer></FooterContainer>
     </>
-    
   );
 }

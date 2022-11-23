@@ -84,6 +84,7 @@ const CardContainer = styled.div`
   overflow: hidden;
   display: flex;
   height: 560px;
+  margin: 0 auto;
   
 `;
 

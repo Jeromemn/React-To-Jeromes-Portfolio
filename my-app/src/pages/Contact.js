@@ -13,12 +13,26 @@ to {
   border-bottom-color: white;
 }
 `;
+
+const MegaContainer = styled.div`
+height: 100%;
+display: block;
+align-content: flex-end;
+justify-content: baseline;
+align-items: flex-end;
+margin-top: 5%;
+`;
+
+
+
 const ContactContainer = styled.div`
   width: 25rem;
   height: 30rem;
-  margin: 1.7em 7rem;
+  /* margin: 1.7em 7rem; */
+  margin: 0 auto;
   margin-bottom: 1rem;
-  align-self: baseline;
+  align-self: flex-end;
+  /* align-content: flex-end; */
   padding-bottom: 1rem;
   font-family: 'Amatic SC', cursive;
   box-sizing: border-box;
@@ -175,6 +189,7 @@ function Form() {
   };
 
   return (
+    <MegaContainer>
 
     <ContactContainer>
       <Header1> Connect With Me </Header1>
@@ -238,6 +253,8 @@ function Form() {
       </FormArea>
       
     </ContactContainer>
+    </MegaContainer>
+
   );
 }
 

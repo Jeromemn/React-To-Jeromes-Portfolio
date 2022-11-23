@@ -18,8 +18,9 @@ const ListItem = styled.li`
    display: inline-flex;
    padding: 1.5em 1.5em 0 1.5em;
    margin-bottom: 0;
-   font-size: 2em;
+   font-size: 1.7em;
   font-family: 'Amatic SC', cursive;
+  
   &:hover {
     transition: all .2s ease-in-out;
     transform: scale(1.2);
@@ -28,8 +29,11 @@ const ListItem = styled.li`
    `;
 
    const UnorderedList = styled.ul`
-   padding-bottom: .8em;
+   padding-bottom: .4em;
    margin-bottom: 0;
+   margin: 0 auto;
+   display: flex;
+   
    
    `;
 

@@ -4,6 +4,7 @@ const Header = styled.header`
  background: #1F271B;
  position: sticky;
  width: 100%;
+ height: 5rem;
  /* padding: 80px, 60px; */
  top: 0;
  left: 0;
@@ -17,7 +18,7 @@ const Header = styled.header`
  `;
 
  const HeaderText = styled.h2`
-    font-size:60px;
+    font-size:4rem;
     color: #FBFBF2;
     margin-top: 0;
     margin-left: 1.1em;

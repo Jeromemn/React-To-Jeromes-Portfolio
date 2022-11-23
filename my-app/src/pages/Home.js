@@ -67,7 +67,7 @@ const View = styled.div`
   padding-right: 3rem;
   /* padding-top: .6rem; */
   grid-template-columns: 0 0.6fr 0.3fr;
-  grid-template-rows: 3.5rem 12.8rem 2.5rem;
+  grid-template-rows: 3.3rem 12.8rem 2.2rem;
   padding-left: 10em;
   /* position: relative; */
   /* position: fixed;  */
@@ -118,7 +118,7 @@ const Header2 = styled.h2`
   text-align: center;
   grid: 2 1;
   font-family: 'Amatic SC', cursive;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   margin: 0 auto;
   padding-bottom: 1rem;
 
@@ -141,7 +141,7 @@ const Header1 = styled.h1`
   /* text-align: justify; */
   justify-self: center;
   font-family: 'Amatic SC', cursive;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   /* text-justify: center; */
   filter: contrast(92%);
 

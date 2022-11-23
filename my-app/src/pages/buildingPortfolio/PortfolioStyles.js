@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.div`
   display: grid;
-  grid-template-columns: 450px;
+  grid-template-columns: 350px;
   grid-template-rows: 350px 100px 80px;
   grid-template-areas: "image" "text" "stats";
   border-radius: 18px;
@@ -13,6 +13,8 @@ export const CardWrapper = styled.div`
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
   margin: 20px;
+  margin-top: 5px;
+  /* padding-top: 5px; */
 `;
 
 export const CardImage = styled.div`
@@ -25,8 +27,8 @@ export const CardImage = styled.div`
   /* background-position: center; */
   background-repeat: no-repeat;
   overflow: hidden;
-  height: 350px;
-  width: 450px;
+  height: 300px;
+  width: 350px;
 `;
 
 export const CardTextWrapper = styled.div`

@@ -78,10 +78,12 @@ const CardContainer = styled.div`
   /* width: 100vw; */
   /* height: 100vh; */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   /* background: #1f2229; */
   overflow: hidden;
+  display: flex;
+  height: 560px;
   
 `;
 
@@ -94,15 +96,32 @@ const CardContainer = styled.div`
 
 const FullPage = styled.div`
   /* background: #1f2229; */
-
+/* transform: scale(0.9); */
+/* transform: translateZ(-4rem); */
+align-content: flex-start;
+height: fit-content;
+margin: 0 auto;
+display: grid;
+flex-direction: column;
+grid-template-columns: auto ;
+grid-template-rows: 6rem 34rem 6rem 34rem;
+height:80rem;
+justify-content: center;
+align-items: center;
 `;
 
 const HeaderTwo = styled.h2`
   /* background: #1f2229; */
-  margin: 0;
-  border-bottom: solid white;
-  padding: 5px;
+  margin: 0 auto;
+  border-bottom: solid white 2px;
+  /* padding: 5px; */
   color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+
 
 `;
 

@@ -61,11 +61,13 @@ const View = styled.div`
   /* float: right; */
   /* align-self: flex-end; */
   display: grid;
-  grid-template-columns: 0.4fr 0.2fr;
-  /* gap: 2rem; */
-  /* grid-column: 2; */
-  /* grid-row: 2; */
-  grid-template-rows: 2rem 10rem 5rem 10rem;
+  /* grid-template-columns: 0 .3fr .3fr; */
+  column-gap: 5rem;
+  float: right;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  grid-template-columns: 0 0.6fr 0.3fr;
+  grid-template-rows: 3.6rem 17rem 3rem 10rem;
   padding-left: 10em;
   /* position: relative; */
   /* position: fixed;  */
@@ -74,16 +76,19 @@ const View = styled.div`
     left: 0;
      right: 0;
      bottom:  0;  */
-  /* justify-content: center;
-    /* align-items: right; */
-    box-sizing: border-box;
-    /* width: 15rem; */
-    /* z-index: 80; */
-    margin: auto auto;
+  justify-content: flex-end;
+  align-content: space-around;
+  text-align: center;
+  
+  box-sizing: border-box;
+  /* width: 15rem; */
+  /* z-index: 80; */
+  margin: 0 0;
+  /* padding: 5rem 5rem; */
 `;
 
 const MyPhoto = styled.img`
-  grid-column-start: 2;
+  grid-column-start: 3;
   justify-self: center;
   --s: 10px;
   padding: var(--s);
@@ -92,7 +97,15 @@ const MyPhoto = styled.img`
   outline-offset: calc(-1 * var(--s));
   background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
   height: 200px;
+  align-self: center;
+  /* margin-right: ; */
+  box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px,
+    rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px,
+    rgba(0, 0, 0, 0.05) -25px 25px, rgba(0, 0, 0, 0.4) 5px 5px,
+    rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px,
+    rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
 `;
+// box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 // const About = styled.div`
 // /* justify-content: center;
 // align-items: center; */
@@ -100,25 +113,44 @@ const MyPhoto = styled.img`
 // `;
 
 const Header2 = styled.h2`
-  grid-column-start: 2;
+  grid-column: 3;
   justify-self: center;
+  text-align: center;
+  grid: 2 1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  margin: 0 auto;
+
 `;
 
 const About = styled.p`
+  grid-column: 2;
   grid-row: 4;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  
 `;
 
 const Header1 = styled.h1`
   grid-row: 3;
+  grid-column: 2;
+  /* text-align: justify; */
   justify-self: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  /* text-justify: center; */
+  filter: contrast(92%);
+
 `;
 
 const Container = styled.div`
-width: 100%;
-height: 100%;
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   margin: 0 auto;

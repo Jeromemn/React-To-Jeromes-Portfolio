@@ -6,6 +6,9 @@ const NavItem = styled.a`
 
    ${(props) => props.isActive && `
       color: black;
+      transform: translateY(-25px);
+      font-size: 1.6em;
+      
       
    `}
      /* &:hover {

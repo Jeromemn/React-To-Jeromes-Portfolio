@@ -105,7 +105,7 @@ export const LinkText = styled.a`
   &:hover {
     transition-timing-function: ease-in-out;
     transition: .6s, .6s;
-    transform: scale(1.8);
+    transform: scale(1.5);
     
 
     /* font-weight: 300; */

@@ -8,18 +8,29 @@ const NavItem = styled.a`
       color: black;
       
    `}
+     /* &:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2); */
+  /* } */
 `;
 const ListItem = styled.li`
    list-style-type: none;
-   display: inline;
+   display: inline-flex;
    padding: 1.5em 1.5em 0 1.5em;
    margin-bottom: 0;
    font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+  &:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+  }
+
    `;
 
    const UnorderedList = styled.ul`
    padding-bottom: .8em;
    margin-bottom: 0;
+   
    `;
 
 function NavTabs({ currentPage, handlePageChange }) {

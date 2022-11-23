@@ -8,7 +8,8 @@ const Header = styled.header`
  top: 0;
  left: 0;
  display: flex;
- flex-direction: column;
+ flex-direction: row
+ ;
  margin: 0 auto;
  z-index: 99;
  /* bottom: 0; */
@@ -21,6 +22,8 @@ const Header = styled.header`
     margin-top: 0;
     margin-left: 1.1em;
     margin-bottom: 0;
+  font-family: 'Amatic SC', cursive;
+
  `;
 
 function HeaderComp(props) {

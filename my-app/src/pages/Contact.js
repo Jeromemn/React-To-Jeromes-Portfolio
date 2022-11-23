@@ -1,25 +1,28 @@
 import { useState } from "react";
 import "../styles/style.css";
 import { validateEmail } from "../utils/helper";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { Button } from "./buildingPortfolio/HomeStyle";
 
+const border = keyframes`
+from { 
+  border-bottom-color:black ;
+}
 
+to {
+  border-bottom-color: white;
+}
+`;
 const ContactContainer = styled.div`
-  width: 30vw;
-  height: 50vh;
-  /* display: ;  */
-  /* align-items: center;  */
-  /* justify-content: center; */
-  border: 5px solid blue;
-  /* margin: 2em 0em 0em 2em; */
-
-
-  /* display: block;  */
-
-  margin-bottom: 16px;
-  margin-top: 16px;
-  max-width: 100%;
+  width: 25rem;
+  height: 30rem;
+  margin: 1.7em 7rem;
+  margin-bottom: 1rem;
+  align-self: baseline;
+  padding-bottom: 1rem;
+  font-family: 'Amatic SC', cursive;
   box-sizing: border-box;
+  box-shadow: black 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, black 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, black 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, black 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, black 40px -40px;
 `;
 
 const FormArea = styled.form`
@@ -29,7 +32,8 @@ const FormArea = styled.form`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding-top: 5px;
+  /* padding-top: 5px; */
+  
 `;
 
 const Unordered = styled.ul`
@@ -40,7 +44,7 @@ const Unordered = styled.ul`
 `;
 
 const ListItem = styled.li`
-  margin-top: 16px;
+  /* margin-top: 16px; */
   padding-top: 0;
   clear: both;
   overflow: visible;
@@ -49,29 +53,18 @@ const ListItem = styled.li`
 `;
 
 const Label = styled.label`
-  /* width: 150px;
-/* display: block; */
-  /* text-align: left;
-float: left; 
-font-size: 20px;
-letter-spacing: 3px;
-margin: 0px 5px 0px 0px;
-white-space: nowrap;
-align-content: flex-end; */
-  /* clear: left; */
+
   position: relative;
-  /* display: inline-block; */
+
   line-height: 1.2;
   clear: both;
-
+  font-size: 2rem;
   transform: translate(15px, 30px);
   transition: all 0.4s ease-in-out;
-
+  /* padding-bottom: 1rem; */
   
 `;
-// const Moved = styled(Label)`
-// animation: ${translateUp}
-// `;
+
 
 const Span = styled.span`
   /* display: block;
@@ -81,7 +74,7 @@ const Span = styled.span`
 `;
 
 const InputWrapper = styled.div`
-margin-top: 8px;
+/* margin-top: 8px; */
 display: block;
 box-sizing: border-box;
 text-indent: 0;
@@ -89,32 +82,33 @@ text-indent: 0;
 
 
 const Inputs = styled.input`
-  width: 60%;
-  /* align-self: right; */
-  margin-bottom: 0.8em;
+  width: 10rem;
+  height: 2.2rem;
+ 
+  /* margin-bottom: 0.8em; */
   border: none;
   border-bottom: 2px solid black;
+  animation: ${border} 6s infinite;
   background-color: transparent;
   color: black;
   outline: none;
   touch-action: manipulation;
   overflow: visible;
+  
+  &:active {
+    animation: none;
+    border-bottom: 2px solid white;
+  }
 
   
 `;
 
 const TextArea = styled.textarea`
-  /* width: 300px;
-  /* height: ; */
-  /* resize: none;
-  outline: none;
-  border: 1 black; */
-  /* border-bottom: 1px solid black; */
-  /* padding-bottom: 0;
-  align-self: baseline; */
+
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
+  animation: ${border} 6s infinite;
   color: white;
   overflow: auto;
   margin: 0;
@@ -122,50 +116,27 @@ const TextArea = styled.textarea`
   display: inline-block;
   text-align: start;
   white-space: pre-wrap;
-  width: 60%;
-  height: 100px;
+  width: 15rem;
+  height: 6rem;
+  /* padding-top: 1rem; */
+
+  &:hover {
+
+  }
 `;
 
 const Header1 = styled.div`
-padding-left: 5px;
-padding-top: 8px;
+padding-left: 3.5rem;
+padding-top: 1rem;
+font-size: 2.5rem;
+
 `;
 
-// const SmallInput = styled.input.attrs((props) => ({
-//   type: "text",
-//   size: props.size || ".5rem",
-// }))`
-//   color: black;
-//   font-size: 1rem;
-//   border: 2px solid black;
-//   border-radius: 4px;
-//   display: block;
-//   width: 100%;
-//   padding: 0.2em;
-
-// margin: ${(props) => props.size};
-// padding: ${(props) => props.size};
-// `;
-
-// const MessageInput = styled(SmallInput)`
-// height: 10em;
-// align-content: start;
-// type: textarea;
-/* width: 90%; */
-/* padding: .2em; */
-/* display: block; */
-/* color: black;
-  font-size: 1rem;
-  border: 2px solid black;
-  border-radius: 4px;
-  display: block;
-  width: 90%;
-  height: 10em;
-  padding: 0.2em; */
-
-
-// `;
- 
+const ErrMessage = styled.p`
+font-size: 1.7rem;
+text-align: center;
+font-weight: bolder;
+`
 
 
 function Form() {
@@ -203,17 +174,15 @@ function Form() {
     setInputMessage("");
   };
 
-  // const moveLabel = (e) => {
-  //   e.preventDefault();
-    
-  //   e.target.
-  // }
-
-  // export default function Contact() {
   return (
 
     <ContactContainer>
       <Header1> Connect With Me </Header1>
+      {errorMessage && (
+        <div>
+          <ErrMessage className="error-text"> {errorMessage}</ErrMessage>
+        </div>
+      )}
       <FormArea>
         <Unordered>
           <ListItem>
@@ -231,7 +200,7 @@ function Form() {
 
           </ListItem>
           <ListItem>
-            <Label> Email
+            <Label> Email:
               <Span></Span>
             </Label>
             <InputWrapper>
@@ -261,17 +230,13 @@ function Form() {
 
           </ListItem>
           <ListItem>
-            <button type="button" onClick={handleFormSubmit}>
+            <Button type="Button" onClick={handleFormSubmit}>
               Send it
-            </button>
+            </Button>
           </ListItem>
         </Unordered>
       </FormArea>
-      {errorMessage && (
-        <div>
-          <p className="error-text"> {errorMessage}</p>
-        </div>
-      )}
+      
     </ContactContainer>
   );
 }

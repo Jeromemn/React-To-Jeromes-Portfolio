@@ -7,6 +7,10 @@ import {
 
 const Logo = styled.img`
   height: 50px;
+  &:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+  }
 `;
 
 const Container = styled.div`

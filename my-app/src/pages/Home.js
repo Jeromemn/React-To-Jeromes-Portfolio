@@ -62,12 +62,12 @@ const View = styled.div`
   /* align-self: flex-end; */
   display: grid;
   /* grid-template-columns: 0 .3fr .3fr; */
-  column-gap: 5rem;
+  column-gap: 3rem;
   float: right;
-  padding-right: 5rem;
-  padding-top: 3rem;
+  padding-right: 3rem;
+  /* padding-top: .6rem; */
   grid-template-columns: 0 0.6fr 0.3fr;
-  grid-template-rows: 3.6rem 17rem 3rem 10rem;
+  grid-template-rows: 3.5rem 12.8rem 2.5rem;
   padding-left: 10em;
   /* position: relative; */
   /* position: fixed;  */
@@ -96,7 +96,7 @@ const MyPhoto = styled.img`
   outline: 1px solid #000;
   outline-offset: calc(-1 * var(--s));
   background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
-  height: 200px;
+  height: 10rem;
   align-self: center;
   /* margin-right: ; */
   box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px,
@@ -118,8 +118,9 @@ const Header2 = styled.h2`
   text-align: center;
   grid: 2 1;
   font-family: 'Amatic SC', cursive;
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
 
 `;
 
@@ -130,6 +131,7 @@ const About = styled.p`
   font-family: 'Amatic SC', cursive;
   font-size: 2rem;
   font-weight: 900;
+  padding-top: .8rem;
   
 `;
 
@@ -139,7 +141,7 @@ const Header1 = styled.h1`
   /* text-align: justify; */
   justify-self: center;
   font-family: 'Amatic SC', cursive;
-  font-size: 3rem;
+  font-size: 2.7rem;
   /* text-justify: center; */
   filter: contrast(92%);
 

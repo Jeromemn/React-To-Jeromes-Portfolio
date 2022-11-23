@@ -85,6 +85,7 @@ const CardContainer = styled.div`
   display: flex;
   height: 560px;
   margin: 0 auto;
+  font-family: 'Amatic SC', cursive;
   
 `;
 

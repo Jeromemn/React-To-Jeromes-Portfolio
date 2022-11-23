@@ -6,7 +6,7 @@ import styled from "styled-components";
 export const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: 350px;
-  grid-template-rows: 350px 100px 80px;
+  grid-template-rows: 300px 150px 80px;
   grid-template-areas: "image" "text" "stats";
   border-radius: 18px;
   background: #000;
@@ -29,6 +29,7 @@ export const CardImage = styled.div`
   overflow: hidden;
   height: 300px;
   width: 350px;
+  
 `;
 
 export const CardTextWrapper = styled.div`
@@ -36,10 +37,10 @@ export const CardTextWrapper = styled.div`
   margin: 5px;
 `;
 
-export const CardTextDate = styled.span`
-  color: rgb(255, 7, 110);
-  font-size: 13px;
-`;
+// export const CardTextDate = styled.span`
+//   color: rgb(255, 7, 110);
+//   font-size: 13px;
+// `;
 
 export const CardTextTitle = styled.h2`
   margin-top: 0px;
@@ -50,6 +51,7 @@ export const CardTextTitle = styled.h2`
   margin: 0px;
   text-align: center;
   color: white;
+  font-size: 2rem;
   /* background: linear-gradient(
     110.78deg,
     rgb(118, 230, 80) -1.13%,
@@ -76,10 +78,11 @@ export const CardStatWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-
+border-top: solid white 2px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: #5930e5;
+  background: #1F271B;
+  font-size: 1.5rem;
 `;
 
 export const CardStats = styled.div`

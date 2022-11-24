@@ -15,6 +15,8 @@ import sequalize from "../assets/Icons/sequelizeLogo.webp";
 import graphql from "../assets/Icons/GraphQL-logo.webp";
 import webpack from "../assets/Icons/webpack2.png";
 
+import Download from "../components/Download";
+
 
 
 
@@ -99,7 +101,7 @@ const backEnd = [
 
 const Container = styled.div`
 display: grid;
-grid-template-columns: repeat(auto-fill, .5fr);
+grid-template-columns:.5fr .5fr;
 grid-template-rows: 4rem 20rem;
 grid-template-areas: 'a b' 'c d';
 column-gap: 5rem;
@@ -107,6 +109,7 @@ align-items: start;
 padding: 0 1rem 0 1rem;
 justify-content: center;
 /* align-content: space-around; */
+
 `;
 
 const Header1 = styled.h1`
@@ -125,6 +128,7 @@ justify-self: center;
 font-family: 'Amatic SC', cursive;
 font-size: 3rem;
 
+
 `;
 
 const Unordered = styled.ul`
@@ -133,9 +137,10 @@ grid-row: 2;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
-/* align-content: center; */
+align-content: space-evenly;
 /* text-align: center; */
 margin: 0 auto;
+padding: 0;
 /* width: 80%;  */
 `;
 const ListItem = styled.li`
@@ -162,6 +167,7 @@ display: flex;
 justify-content: space-between;
 width: 90%;
 align-content: flex-start;
+justify-self: center;
 height: 100%;
 
 `;
@@ -172,6 +178,7 @@ display: flex;
 justify-content: space-between;
 width: 90%;
 align-content: flex-start;
+justify-self: center;
 height: 100%;
 
 `;
@@ -212,7 +219,7 @@ export default function Resume() {
     
     </Container>
 
-    
+    <Download></Download>
 
         </>
     

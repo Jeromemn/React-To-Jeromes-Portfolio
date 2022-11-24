@@ -150,14 +150,14 @@ const ErrMessage = styled.p`
 font-size: 1.7rem;
 text-align: center;
 font-weight: bolder;
-`
+`;
 
 
 function Form() {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [inputMessage, setInputMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [inputMessage, setInputMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   // const [sentMessage, setSentMessage] = useState('');  // use this to confirm sent or
 
   const handleInputChange = (e) => {
@@ -165,9 +165,9 @@ function Form() {
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === "email") {
+    if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === "name") {
+    } else if (inputType === 'name') {
       setName(inputValue);
     } else {
       setInputMessage(inputValue);
@@ -177,18 +177,19 @@ function Form() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || name || inputMessage) {
-      setErrorMessage("Email is invalid or another field is empty");
+    if (!validateEmail(email) || !name || !inputMessage) {
+      setErrorMessage('Email is invalid or another field is empty');
       return;
     }
-    alert("Message Sent allow 2-3 days for response"); // orr use this to confirm sent orr
+    alert('Message Sent allow 2-3 days for response'); // orr use this to confirm sent orr
 
-    setEmail("");
-    setName("");
-    setInputMessage("");
+    setEmail('');
+    setName('');
+    setInputMessage('');
   };
 
   return (
+    
     <MegaContainer>
 
     <ContactContainer>
@@ -255,6 +256,7 @@ function Form() {
     </ContactContainer>
     </MegaContainer>
 
+    
   );
 }
 

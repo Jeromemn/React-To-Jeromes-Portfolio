@@ -1,13 +1,13 @@
 // import Projects from "../components/Projects"
 import styled from "styled-components";
-import cardbattle from "../assets/Card-Battle-gif.gif";
-import nonSocial from "../assets/NonSocial-screenshot.jpg";
-import WeatherWatcher from "../assets/WeatherWatcher.jpg";
-// import comingsoon from "../assets/comingsoon.png"
-import inprogess from "../assets/inprogress2.jpg"
-// import socialClub from "../assets/socialClub.jpg"
-import socials from "../assets/social3.jpg"
-import textedit from "../assets/textedit2.jpg"
+import cardbattle from "../assets/projectimages/Card-Battle-gif.gif";
+import nonSocial from "../assets/projectimages/NonSocial-screenshot.jpg";
+import WeatherWatcher from "../assets/projectimages/WeatherWatcher.jpg";
+// import comingsoon from "../assets/projectimages/comingsoon.png"
+import inprogess from "../assets/projectimages/inprogress2.jpg"
+// import socialClub from "../assets/projectimages/socialClub.jpg"
+import socials from "../assets/projectimages/social3.jpg"
+import textedit from "../assets/projectimages/textedit2.jpg"
 // import github from "../assets/GitHub-logo.png"
 
 import {
@@ -52,21 +52,21 @@ const projects = [
 
 const smallStuff = [
     {
-      id:1, 
+      id:10, 
       title: 'Weather Watcher',
       deployed: 'https://jeromemn.github.io/weather-watcher/',
       github: 'https://github.com/Jeromemn/weather-watcher',
       image: WeatherWatcher,
   },
   {
-    id:2, 
+    id:20, 
     title: 'Social club',
     // deployed: 'https://jeromemn.github.io/weather-watcher/',
     github: 'https://github.com/Jeromemn/Social-club',
     image: socials,
   },
   {
-    id:2, 
+    id:22, 
     title: 'Text Editor',
     deployed: 'https://pwathejateway.herokuapp.com/',
     github: 'https://github.com/Jeromemn/Progressive-Web-App-TextEditor',
@@ -135,10 +135,10 @@ function Card() {
       <CardContainer>
         {projects.map((project) => (
             
-            <Tilt >
+            <Tilt>
 
             <CardWrapper key={project.id} >
-              <CardImage
+              <CardImage 
                 background={project.image}
                 className="images"
                 alt={project.title}
@@ -146,16 +146,16 @@ function Card() {
               ></CardImage>
 
               <CardTextWrapper>
-                <CardTextTitle> {project.title} </CardTextTitle>
+                <CardTextTitle>  {project.title} </CardTextTitle>
                 {/* /* <CardBodyText></CardBodyText> */ }
               </CardTextWrapper>
               <CardStatWrapper>
                 <CardStats>
-                  <LinkText href={project.deployed} target="_blank" rel="noreferrer">Deployed Site</LinkText>
+                  <LinkText href={project.deployed} target="_blank" rel="noreferrer" >Deployed Site</LinkText>
                   </CardStats>
                     
                   <CardStats>
-                  <LinkText href={project.github} target="_blank" rel="noreferrer">Github</LinkText>
+                  <LinkText href={project.github} target="_blank" rel="noreferrer" >Github</LinkText>
                 </CardStats>
               </CardStatWrapper>
             </CardWrapper>

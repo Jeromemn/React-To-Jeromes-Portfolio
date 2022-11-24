@@ -230,7 +230,7 @@ function Form() {
 
           </ListItem>
           <ListItem>
-            <Label for="message"> Send me a message!
+            <Label> Send me a message!
               <Span> </Span>
             </Label>
             <InputWrapper>

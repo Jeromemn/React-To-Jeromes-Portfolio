@@ -14,8 +14,8 @@ import MongoDB from "../assets/Icons/MongoDbW.webp";
 import sequalize from "../assets/Icons/sequelizeLogo.webp";
 import graphql from "../assets/Icons/GraphQL-logo.webp";
 import webpack from "../assets/Icons/webpack2.png";
-
-import Download from "../components/Download";
+import { Button } from "../components/Download"
+import tempResume from "../assets/tempResume.pdf";
 
 
 
@@ -183,6 +183,24 @@ height: 100%;
 
 `;
 
+const ButtonContainer = styled.div`
+display: flex;
+justify-content: center;
+height: 6rem;
+padding-top: 4rem;
+`;
+
+const ButtonText = styled.text`
+  font-family: 'Amatic SC', cursive;
+text-decoration: none;
+color: white;
+font-size: 2rem;
+`;
+
+const Anchor = styled.a`
+text-decoration: none;
+`;
+
 export default function Resume() {
   return (
     <>
@@ -218,8 +236,13 @@ export default function Resume() {
 
     
     </Container>
+<ButtonContainer>
 
-    <Download></Download>
+    <Button>
+    <Anchor target="_blank" rel="noreferrer" href={tempResume} download={tempResume}><ButtonText> Check out my Resume </ButtonText>
+    </Anchor>
+      </Button>
+</ButtonContainer>
 
         </>
     

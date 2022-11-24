@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/style.css";
 import { validateEmail } from "../utils/helper";
 import styled, { keyframes } from "styled-components";
-import { Button } from "./buildingPortfolio/HomeStyle";
+import { Button } from "./buildingPortfolio/ContactButtonStyle";
 
 const border = keyframes`
 from { 

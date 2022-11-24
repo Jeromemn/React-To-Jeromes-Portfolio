@@ -12,7 +12,7 @@ import newBackground from "../assets/homeBackground.jpg";
 
 const PageWrapper = styled.div`
   padding: 1rem;
-  min-height: calc(100vh - 75.2px - 118px - 2rem);
+  min-height: calc(100vh - 75.2px - 133px - 2rem);
   background: #878E88;
   /* z-index: -2; */
 

@@ -1,6 +1,6 @@
 {
-  "name": "jeromeportfolio",
-  "homepage": "./",
+  "homepage": "https://Jeromemn.github.io/React-To-Jeromes-Portfolio",
+  "name": "jeromesportfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+// button on resume page
 
 export const Button = styled.button`
 
@@ -32,8 +32,8 @@ export const Button = styled.button`
   outline-offset: .05em;
 }
 
-&:active {
+/* &:active {
   background: var(--color);
   color: red;
-}
+} */
 `;

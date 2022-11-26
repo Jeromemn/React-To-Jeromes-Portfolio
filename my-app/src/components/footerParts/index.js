@@ -1,10 +1,10 @@
-import { Icon } from "./Icons"
+// import { Icon } from "./Icons"
 
 
 
 
-export default function Icons({className}) {
-    return ( <Icon className={className} />
+// export default function Icons({className}) {
+//     return ( <Icon className={className} />
 
-    )
-}
+//     )
+// }

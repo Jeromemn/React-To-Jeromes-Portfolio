@@ -1,14 +1,12 @@
 import gitHub from "../assets/GitHub-logo.png";
 import linkedin from "../assets/LinkedIn_Logo.svg.png";
 import styled from "styled-components";
-import {
-  flexAlignHorizontalContent,
-} from "../styles/mixins";
+import { flexAlignHorizontalContent } from "../styles/mixins";
 
 const Logo = styled.img`
   height: 50px;
   &:hover {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: scale(1.2);
   }
 `;
@@ -18,11 +16,9 @@ const Container = styled.div`
   bottom: 0;
   width: 100%;
   height: 8rem;
-  /* position: fixed; */
   left: 0;
   align-content: center;
   justify-content: center;
-  
 `;
 
 const Row = styled.div`

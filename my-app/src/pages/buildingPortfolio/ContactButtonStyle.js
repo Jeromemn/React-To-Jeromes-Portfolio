@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-
-
-/* CSS */
 export const Button = styled.button`
   align-self: center;
   background-color: #fff;
@@ -13,19 +10,17 @@ export const Button = styled.button`
   border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
   color: #41403e;
   cursor: pointer;
-  /* display: inline-block; */
-  /* font-family: Neucha, sans-serif; */
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
 
   font-size: 1.8rem;
   font-weight: bolder;
   line-height: 23px;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   transition: all 235ms ease-in-out;
   border-bottom-left-radius: 15px 255px;
@@ -37,15 +32,12 @@ export const Button = styled.button`
   touch-action: manipulation;
   float: right;
 
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
 
-
-&:hover {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
-}
-
-&:focus {
-  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
-}
-` 
-
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+  }
+`;

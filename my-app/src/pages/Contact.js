@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../styles/style.css";
 import { validateEmail } from "../utils/helper";
 import styled, { keyframes } from "styled-components";
 import { Button } from "./buildingPortfolio/ContactButtonStyle";
@@ -15,28 +14,28 @@ to {
 `;
 
 const MegaContainer = styled.div`
-height: 100%;
-display: block;
-align-content: flex-end;
-justify-content: baseline;
-align-items: flex-end;
-margin-top: 5%;
+  height: 100%;
+  display: block;
+  align-content: flex-end;
+  justify-content: baseline;
+  align-items: flex-end;
+  margin-top: 5%;
 `;
-
-
 
 const ContactContainer = styled.div`
   width: 25rem;
   height: 30rem;
-  /* margin: 1.7em 7rem; */
   margin: 0 auto;
   margin-bottom: 1rem;
   align-self: flex-end;
-  /* align-content: flex-end; */
   padding-bottom: 1rem;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   box-sizing: border-box;
-  box-shadow: black 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, black 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, black 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, black 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, black 40px -40px;
+  box-shadow: black 0px 0px 0px 2px inset,
+    rgb(255, 255, 255) 10px -10px 0px -3px, black 10px -10px,
+    rgb(255, 255, 255) 20px -20px 0px -3px, black 20px -20px,
+    rgb(255, 255, 255) 30px -30px 0px -3px, black 30px -30px,
+    rgb(255, 255, 255) 40px -40px 0px -3px, black 40px -40px;
 `;
 
 const FormArea = styled.form`
@@ -46,8 +45,6 @@ const FormArea = styled.form`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  /* padding-top: 5px; */
-  
 `;
 
 const Unordered = styled.ul`
@@ -58,7 +55,6 @@ const Unordered = styled.ul`
 `;
 
 const ListItem = styled.li`
-  /* margin-top: 16px; */
   padding-top: 0;
   clear: both;
   overflow: visible;
@@ -67,7 +63,6 @@ const ListItem = styled.li`
 `;
 
 const Label = styled.label`
-
   position: relative;
 
   line-height: 1.2;
@@ -75,31 +70,25 @@ const Label = styled.label`
   font-size: 2rem;
   transform: translate(15px, 30px);
   transition: all 0.4s ease-in-out;
-  /* padding-bottom: 1rem; */
-  
 `;
 
-
-const Span = styled.span`
-  /* display: block;
-  overflow: hidden;
-  padding: 0px 4px 0px 6px;
-  align-items: baseline; */
-`;
+// const Span = styled.span`
+//   /* display: block;
+//   overflow: hidden;
+//   padding: 0px 4px 0px 6px;
+//   align-items: baseline; */
+// `;
 
 const InputWrapper = styled.div`
-/* margin-top: 8px; */
-display: block;
-box-sizing: border-box;
-text-indent: 0;
+  display: block;
+  box-sizing: border-box;
+  text-indent: 0;
 `;
-
 
 const Inputs = styled.input`
   width: 10rem;
   height: 2.2rem;
- 
-  /* margin-bottom: 0.8em; */
+
   border: none;
   border-bottom: 2px solid black;
   animation: ${border} 6s infinite;
@@ -108,17 +97,14 @@ const Inputs = styled.input`
   outline: none;
   touch-action: manipulation;
   overflow: visible;
-  
+
   &:active {
     animation: none;
     border-bottom: 2px solid white;
   }
-
-  
 `;
 
 const TextArea = styled.textarea`
-
   background-color: transparent;
   border: none;
   border-bottom: 2px solid black;
@@ -132,42 +118,38 @@ const TextArea = styled.textarea`
   white-space: pre-wrap;
   width: 15rem;
   height: 6rem;
-  /* padding-top: 1rem; */
 
-  &:hover {
-
-  }
+  /* &:hover {
+    add a hover function to show text area
+  } */
 `;
 
 const Header1 = styled.div`
-padding-left: 3.5rem;
-padding-top: 1rem;
-font-size: 2.5rem;
-
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+  font-size: 2.5rem;
 `;
 
 const ErrMessage = styled.p`
-font-size: 1.7rem;
-text-align: center;
-font-weight: bolder;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bolder;
 `;
 
-
 function Form() {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [inputMessage, setInputMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  // const [sentMessage, setSentMessage] = useState('');  // use this to confirm sent or
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [inputMessage, setInputMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === 'email') {
+    if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType === 'name') {
+    } else if (inputType === "name") {
       setName(inputValue);
     } else {
       setInputMessage(inputValue);
@@ -178,85 +160,81 @@ function Form() {
     e.preventDefault();
 
     if (!validateEmail(email) || !name || !inputMessage) {
-      setErrorMessage('Email is invalid or another field is empty');
+      setErrorMessage("Email is invalid or another field is empty");
       return;
     }
-    alert('Message Sent allow 2-3 days for response'); // orr use this to confirm sent orr
+    alert("Message Sent allow 2-3 days for response"); // orr use this to confirm sent orr
 
-    setEmail('');
-    setName('');
-    setInputMessage('');
+    setEmail("");
+    setName("");
+    setInputMessage("");
   };
 
   return (
-    
     <MegaContainer>
-
-    <ContactContainer>
-      <Header1> Connect With Me </Header1>
-      {errorMessage && (
-        <div>
-          <ErrMessage className="error-text"> {errorMessage}</ErrMessage>
-        </div>
-      )}
-      <FormArea>
-        <Unordered>
-          <ListItem>
-            <Label> Name:
-              <Span></Span>
-            </Label>
-            <InputWrapper>
-            <Inputs
-              value={name}
-              name="name"
-              onChange={handleInputChange}
-              type="name"
-            />
-            </InputWrapper>
-
-          </ListItem>
-          <ListItem>
-            <Label> Email:
-              <Span></Span>
-            </Label>
-            <InputWrapper>
-
-            <Inputs
-              value={email}
-              name="email"
-              onChange={handleInputChange}
-              type="email"
-            />
-            </InputWrapper>
-
-          </ListItem>
-          <ListItem>
-            <Label> Send me a message!
-              <Span> </Span>
-            </Label>
-            <InputWrapper>
-            
-            <TextArea
-              value={inputMessage}
-              name="inputMessage"
-              onChange={handleInputChange}
-              type="inputMessage"
-            />
-            </InputWrapper>
-
-          </ListItem>
-          <ListItem>
-            <Button type="Button" onClick={handleFormSubmit}>
-              Send it
-            </Button>
-          </ListItem>
-        </Unordered>
-      </FormArea>
-      
-    </ContactContainer>
+      <ContactContainer>
+        <Header1> Connect With Me </Header1>
+        {errorMessage && (
+          <div>
+            <ErrMessage className="error-text"> {errorMessage}</ErrMessage>
+          </div>
+        )}
+        <FormArea>
+          <Unordered>
+            <ListItem>
+              <Label>
+                {" "}
+                Name:
+                {/* <Span></Span> */}
+              </Label>
+              <InputWrapper>
+                <Inputs
+                  value={name}
+                  name="name"
+                  onChange={handleInputChange}
+                  type="name"
+                />
+              </InputWrapper>
+            </ListItem>
+            <ListItem>
+              <Label>
+                {" "}
+                Email:
+                {/* <Span></Span> */}
+              </Label>
+              <InputWrapper>
+                <Inputs
+                  value={email}
+                  name="email"
+                  onChange={handleInputChange}
+                  type="email"
+                />
+              </InputWrapper>
+            </ListItem>
+            <ListItem>
+              <Label>
+                {" "}
+                Send me a message!
+                {/* <Span> </Span> */}
+              </Label>
+              <InputWrapper>
+                <TextArea
+                  value={inputMessage}
+                  name="inputMessage"
+                  onChange={handleInputChange}
+                  type="inputMessage"
+                />
+              </InputWrapper>
+            </ListItem>
+            <ListItem>
+              <Button type="Button" onClick={handleFormSubmit}>
+                Send it
+              </Button>
+            </ListItem>
+          </Unordered>
+        </FormArea>
+      </ContactContainer>
     </MegaContainer>
-
-    
   );
 }
 

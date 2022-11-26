@@ -5,16 +5,14 @@ import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
 import Resume from "../pages/Resume";
-// import projects from "./Projects";
 import Header from "./Header";
-import FooterContainer from "./Footer"; // import footer container and change footer to footercontainer
-import newBackground from "../assets/homeBackground.jpg";
+import FooterContainer from "./Footer";
+import newBackground from "../assets/newBackground.webp";
 
 const PageWrapper = styled.div`
   padding: 1rem;
   min-height: calc(100vh - 75.2px - 133px - 2rem);
-  background: #878E88;
-  /* z-index: -2; */
+  background: #c2c2c2;
 
   ${({ $isHomePage }) =>
     $isHomePage &&

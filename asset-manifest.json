@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/React-To-Jeromes-Portfolio/static/js/main.4061cb0e.js",
+    "main.js": "/React-To-Jeromes-Portfolio/static/js/main.ace38da0.js",
     "static/js/787.d470f4cd.chunk.js": "/React-To-Jeromes-Portfolio/static/js/787.d470f4cd.chunk.js",
     "static/media/newBackground.webp": "/React-To-Jeromes-Portfolio/static/media/newBackground.0c5773a71d3b22b4ecd1.webp",
     "static/media/myphoto.webp": "/React-To-Jeromes-Portfolio/static/media/myphoto.c7e1012d5e8151efb164.webp",
     "static/media/Card-Battle-gif.gif": "/React-To-Jeromes-Portfolio/static/media/Card-Battle-gif.ccd17285953b1047e949.gif",
+    "static/media/modernPilgrims-s.jpg": "/React-To-Jeromes-Portfolio/static/media/modernPilgrims-s.dcb8ea0a4daabddcac54.jpg",
     "static/media/NonSocial-screenshot.jpg": "/React-To-Jeromes-Portfolio/static/media/NonSocial-screenshot.43d764ed07fa465f4f39.jpg",
     "static/media/WeatherWatcher.jpg": "/React-To-Jeromes-Portfolio/static/media/WeatherWatcher.b27b3523ad525464c9b8.jpg",
     "static/media/webpack2.webp": "/React-To-Jeromes-Portfolio/static/media/webpack2.c8024fd2d9eaac50e43b.webp",
@@ -30,10 +31,10 @@
     "static/media/HTML.webp": "/React-To-Jeromes-Portfolio/static/media/HTML.c180695f39b020c94d4c.webp",
     "static/media/CSS.webp": "/React-To-Jeromes-Portfolio/static/media/CSS.09927b559921bfb59cbb.webp",
     "index.html": "/React-To-Jeromes-Portfolio/index.html",
-    "main.4061cb0e.js.map": "/React-To-Jeromes-Portfolio/static/js/main.4061cb0e.js.map",
+    "main.ace38da0.js.map": "/React-To-Jeromes-Portfolio/static/js/main.ace38da0.js.map",
     "787.d470f4cd.chunk.js.map": "/React-To-Jeromes-Portfolio/static/js/787.d470f4cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4061cb0e.js"
+    "static/js/main.ace38da0.js"
   ]
 }

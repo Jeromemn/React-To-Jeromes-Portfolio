@@ -2,7 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+https://drive.google.com/file/d/133XAKlS_kXkL37gfClbEUSigJdzCuoix/view
+
 ## Available Scripts
+[ResumeVideo.webm](https://user-images.githubusercontent.com/112592440/204074394-0836a3c8-663f-4cde-8d35-5025dbd210b8.webm)
 
 In the project directory, you can run:
 

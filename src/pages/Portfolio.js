@@ -3,6 +3,7 @@ import cardbattle from "../assets/projectimages/Card-Battle-gif.gif";
 import nonSocial from "../assets/projectimages/NonSocial-screenshot.jpg";
 import WeatherWatcher from "../assets/projectimages/WeatherWatcher.jpg";
 import inprogess from "../assets/projectimages/inprogress2.jpg";
+import modernPilgrims from "../assets/projectimages/modernPilgrims-s.jpg"
 import socials from "../assets/projectimages/social3.jpg";
 import textedit from "../assets/projectimages/textedit2.jpg";
 
@@ -38,11 +39,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "Coming Soon!",
-    deployed: "https://jeromemn.github.io/",
-    github: "https://github.com/Jeromemn",
-    image: inprogess,
-    tech: "MERN app, MongoDB, Mongoose, GraphQL API, Express.js, Node.js, React,Authentication with JWT, CSS library, ",
+    title: "Modern Pilgrims",
+    deployed: "https://modernpilgrims.herokuapp.com/",
+    github: "https://github.com/Jeromemn/Modern-Pilgrim",
+    image: modernPilgrims,
+    tech: "MERN app, MongoDB, Mongoose, GraphQL API, Express.js, Node.js, React,Auth0, Styled Components, Cloudinary, Apollo ",
   },
 ];
 
